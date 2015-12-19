@@ -1,0 +1,22 @@
+@charset "UTF-8";
+html{ 
+	font-size: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+    line-height:2;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+	}
+*, *:before, *:after{
+    -webkit-box-sizing:inherit;
+       -moz-box-sizing:inherit;
+            box-sizing:inherit;
+	-webkit-text-size-adjust:none;
+	}
+
+/* TYPOGRAPHY */
+h1 {
+	font-size:1.5rem;
+	}
+h2, section h1{}
+p {}

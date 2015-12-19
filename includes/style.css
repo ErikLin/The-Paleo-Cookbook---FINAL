@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(https://fonts.googleapis.com/css?family=Khula:400,300);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@font-face {
+    font-family: "Believer_Fever";
+    src: url('Believer_Fever.otf');
+/*
+    ,
+        url('Believer_Fever.svg#Believer_Fever') format('svg');
+*/
+}
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-image: url(../images/scratchyPaint.jpg);
+    background-repeat: repeat;
+    background-size: 15rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: auto;
+    background: rgba(255, 215, 138, 0.88);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+div.container {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+header {
+    position: relative;
+    margin-bottom: -10px;
+    align-content: center;
+    overflow: auto;
+}
+
+header img {
+    width: 100%;
+    margin-bottom: 0px;
+    display: inline-flex;
+}
+
+.logoHead, h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 14vw;
+    font-weight: 100;
+    color: #fff3dc;
+    font-family: "Believer_Fever";
+}
+
+img.homeLOGO {
+    width: 20%;
+    max-width: 20rem;
+    margin: auto;
+    position: absolute;
+    top: 19rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+nav {
+    background-image: url(../images/orange%20head.png);
+    overflow: auto;
+    padding: 0;
+}
+
+h2 {
+    font-family: Courgette, arvo, "Sigmar One";
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/orange%20head.png);
+    background-size: cover;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    margin-top: -.4rem;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+}
+
+div.meals {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+section {
+    width: 33.33%;
+    flex-grow: 1;
+    padding-bottom: 2rem;
+}
+
+section:nth-child(4) {
+}
+
+div.recipieName {
+    float: left;
+    width: 95%;
+    margin: 2%;
+    background: #fff3dc;
+    box-shadow: 2px 2px 5px black;
+    border-radius: .2rem;
+    padding: .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.recipieName:hover {
+    background: #fff6e6;
+    box-shadow: 5px 5px 8px black;
+}
+
+img.home {
+    width: 40%;
+    float: left;
+    border-radius: .2rem;
+}
+
+h3 {
+    float: left;
+    width: 60%;
+    padding-left: 1rem;
+    padding-top: 0;
+    margin: 0;
+    font-family: "Arvo";
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+h4 {
+    font-family: arvo;
+    font-size: 5rem;
+    color: #404040;
+    margin: 0;
+    width: calc(100% - 27rem);
+    float: right;
+    line-height: 1.2em;
+}
+
+div.how {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+
+/*table------------------------------------------------------------------------*/
+
+table {
+    max-width: 20rem;
+    font-family: arvo;
+    float: left;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: .2rem;
+}
+
+th {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #404040;
+    padding-top: 0;
+    font-weight: 100;
+}
+
+td {
+    font-weight: 500;
+    font-family: "Khula", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+td:nth-child(1) {
+    text-align: right;
+    white-space: nowrap;
+}
+
+td:nth-child(3) {
+    text-align: center;
+}
+
+td > img {
+    height: 1rem;
+}
+
+
+/*directions--------------------------------------------------*/
+
+section.directions {
+    float: left;
+    width: calc(100% - 27rem);
+}
+
+h5 {
+    font-family: arvo;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #404040;
+    margin-top: 0;
+}
+
+li:nth-child(odd) {
+    background: rgba(255, 186, 0, 0.1);
+}
+
+li {
+    font-size: 1.2rem;
+    font-family: Khula, sans-serif;
+    counter-increment: listNumbering;
+    list-style-type: none;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+li > div {
+    min-height: 5rem;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+ol {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: -1rem;
+}
+
+img.cookICON {
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    float: right;
+    flex: none;
+}
+
+
+/*Recpipie page---------------------------------------------------------------*/
+
+recipie {
+    overflow-x: hidden;
+}
+
+body.recipie {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+nav.recipie {
+    display: flex;
+    align-items: center;
+    background-repeat: repeat-x;
+    background-size: 53rem;
+    background-position: bottom;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: visible;
+}
+
+img.logo {
+    height: 3rem;
+    float: left;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+img.head {
+    height: 17rem;
+    float: left;
+    margin-bottom: 3rem;
+    margin-top: -5px;
+    position: relative;
+}
+
+h1.recipieNAV {
+    float: left;
+    font-size: 3rem;
+    width: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    top: 0;
+    margin-left: 1.5rem;
+}
+
+a.navLINK {
+    color: white;
+    font-family: "Courgette", "Sigmar One";
+    font-weight: 100;
+    font-size: 1.75rem;
+    text-shadow: 1px 1px 2px black;
+    padding-left: 4%;
+    padding-right: 3%;
+    line-height: 6rem;
+    margin-left: 0%;
+    float: left;
+}
+
+a.navLINK:hover {
+    transform: rotate(-4deg);
+}
+
+a.navLINK:nth-child(3):hover {
+    transform: rotate(-12deg);
+}
+
+a.navLINK:nth-child(5):hover {
+    transform: rotate(-6deg);
+}
+
+/*
+div.navDropDown:hover:parent {
+    transform: rotate(-4deg);
+}
+*/
+
+div.navButtons {
+    margin-left: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: auto;
+    margin-right: 1.5rem;
+}
+
+
+/*nav drop downs---------------------------------------------------------------------------*/
+
+div.navDropDown {
+    width: 25rem;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    background: #e86300;
+    background: url(../images/orangeSquare.png);
+    background-size: 100% 100%;
+    padding: 1rem 2rem 2rem 2rem;
+    overflow-y: visible;
+    visibility: hidden;
+    z-index: 155;
+}
+
+a:hover + div {
+    visibility: visible;
+}
+
+div.navDropDown:hover {
+    visibility: visible;
+}
+
+div.breakfastMenu {
+    right: 12.1rem;
+}
+
+div.lunchMenu {
+    right: 6.3rem;
+}
+
+div.DinnerhMenu {
+    right: 0rem;
+}
+
+div.navDropDown h3 {
+    font-size: 1.25rem;
+}
+
+
+/* MEDIA QUERIES --------------------------------------------------------------------------*/
+
+@media (max-width: 1010px) {
+    /* up to 699px wide */
+    html {
+        font-size: 14px;
+    }
+    h4 {
+        width: 100%;
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+    }
+    section.directions {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+        margin-bottom: 5rem;
+    }
+    div.how {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+    img.cookICON {
+        float: left;
+        clear: both;
+    }
+    li > div {
+        width: 100%;
+    }
+    div.meals {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    /* 700px wide and up */
+    html {
+        font-size: 16px;
+    }
+}
